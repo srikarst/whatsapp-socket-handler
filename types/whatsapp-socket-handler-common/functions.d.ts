@@ -1,0 +1,1 @@
+type WrappedFn = () => Promise<ResponseOutput>;

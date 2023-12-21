@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3002:3001"
+    volumes:
+      - /home/node/whatsapp-socket-handler/node_modules
+      - .:/home/node/whatsapp-socket-handler:cached
